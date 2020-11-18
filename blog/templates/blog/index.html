@@ -1,0 +1,22 @@
+{% extends 'blog/base.html' %}
+
+
+{% block content %}
+	{% for post in posts %}
+	<a href="{% url 'post_detail' pk=post.pk %}">    
+<div class="card">
+	<div class="date">
+	            {{ post.published_date }}
+	</div>	
+	<img src="{{ post.image.url }}" >
+    <h1 class="entry-title">
+   	
+
+    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+  </h1><br>
+  <small><a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a></small>
+
+</div>
+</a>
+	{% endfor %}
+{% endblock %}

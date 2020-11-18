@@ -1,14 +1,16 @@
 h1 a {
     color: #FCA205;
-    font-family: 'Lobster';
+    font-family: Courier New, monospace;
 }
 body {
-    padding-left: 15px;
+  padding-left: 15px;
+  background: #3F5C89;
+
 }
+
 .page-header {
-    background-color: #ff9400;
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    padding: 0px 20px 0px 40px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -22,11 +24,13 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: Snell Roundhand, cursive;
 }
 
 .date {
-    color: #828282;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
 }
 
 .save {
@@ -46,8 +50,152 @@ h1, h2, h3, h4 {
 
 .post {
     margin-bottom: 70px;
+    margin-left: 100px;
 }
 
 .post h1 a, .post h1 a:visited {
     color: #000000;
+}
+.comment {
+    margin: 20px 0px 20px 20px;
+}
+.post img {
+    width: 500px;
+    height: 500px;
+}
+.my-logo img{
+    margin-top: 0;
+    width: 310px;
+    height: 200px;
+    margin-left: 30px;
+}
+
+p, a {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  font-family: Courier, monospace;
+  font-smoothing: antialiased;
+  margin: 0.8em 0;
+  font-size: 18px;
+  color: #B95;
+}
+
+
+.card {
+  width: 800px;
+  height: 600px;
+  padding: 30px;
+  background: rgb(133,148,227);
+background: radial-gradient(circle, rgba(133,148,227,1) 0%, rgba(56,162,118,1) 69%);
+  margin: auto;
+  transition: 0.3s ease;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  margin-bottom: 50px;
+}
+img{
+     width: 500px;
+    height: 400px;
+}
+
+.card:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+  transform: translateY(-10px) scale(1.02);
+}
+
+.entry-title {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #16a085 50%);
+  background-size: 200%;
+  background-position: 0 0;
+  display: inline;
+  transition: 0.5s ease-in-out;
+  font-family: raleway, arial, sans-serif;
+  text-transform: uppercase;
+}
+.entry-title a {
+  color: white;
+  text-decoration: none;
+}
+
+small {
+  margin-top: 20px;
+  display: block;
+  font-family: raleway, arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+small a {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+span {
+  display: block;
+  margin-top: 10px;
+  font-family: raleway, arial, sans-serif;
+  font-weight: 700;
+  color: #16a085;
+}
+span a {
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  transition: all .4s ease-out;
+}
+.wrapper__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.social-link--linkedin {
+  color: #2d76b0;
+}
+.social-link--github {
+  color: #000;
+}
+.social-link--instagram {
+  color: #9a2970;
+}
+.social-link--dribbble {
+  color: #b53561;
+}
+.social-link .social-svg {
+  width: 10rem;
+  height: 10rem;
+}
+.social-link .social-svg .social-group__icon {
+  fill: #191308;
+  transition: all .2s;
+}
+.social-link .social-svg .social-group__inner-circle {
+  fill: transparent;
+  transition: all .2s;
+}
+.social-link .social-svg .social-group__outline {
+  stroke: #191308;
+  transform-origin: 50% 50%;
+  transition: all .2s;
+}
+.social-link .social-svg:hover .social-group__icon, .social-link .social-svg:active .social-group__icon, .social-link .social-svg:focus .social-group__icon {
+  fill: #FFFBFA;
+  transition: all .45s;
+}
+.social-link .social-svg:hover .social-group__inner-circle, .social-link .social-svg:active .social-group__inner-circle, .social-link .social-svg:focus .social-group__inner-circle {
+  fill: currentColor;
+  transition: all .45s;
+}
+.social-link .social-svg:hover .social-group__inner-circle--instagram, .social-link .social-svg:active .social-group__inner-circle--instagram, .social-link .social-svg:focus .social-group__inner-circle--instagram {
+  fill: url(#simpleInsta) !important;
+}
+.social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
+  stroke: currentColor;
+  transform: scale(1.1);
+  transition: all .45s;
 }

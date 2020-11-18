@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <script type="text/javascript" scr="{% static 'js/home.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+  <!-- @NOTE: the onclicks are used for touch devices since I'm lazy and didnt use <a> tags -->
+<div class="Menu">
+  <ul class="Menu-list" data-offset="10">
+    <li class="Menu-list-item" data-offset="20" onclick>
+      <li class="Menu-list-item" data-offset="20" onclick>
+        <a href="{% url 'index' %}">
+          Home
+      
+      <span class="Mask"><span>Home</span></span>
+      <span class="Mask"><span>Home</span></span>
+        </a>
+    </li>
+    <li class="Menu-list-item" data-offset="16" onclick>
+      <a href="#">
+          About
+      
+      <span class="Mask"><span>About</span></span>
+      <span class="Mask"><span>About</span></span>
+      </a>
+    </li>
+    <li class="Menu-list-item" data-offset="12" onclick>
+      <a href="#">
+      Work
+      
+      <span class="Mask"><span>Work</span></span>
+      <span class="Mask"><span>Work</span></span>
+      </a>
+    </li>
+    <li class="Menu-list-item" data-offset="8" onclick>
+      <a href="{% url 'contact' %}">
+      Contact
+      
+      <span class="Mask"><span>Contact</span></span>
+      <span class="Mask"><span>Contact</span></span>
+      </a>
+    </li>
+  </ul>
+</div>
+</body>
+</html>
